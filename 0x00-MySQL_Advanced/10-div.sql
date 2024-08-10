@@ -1,13 +1,16 @@
 i-- Creates a function SafeDiv that divides (and returns) the first by the
 -- second number or returns 0 if the second number is equal to 0.
 
-DELIMITER //
+DELIMITER $$
 
 DROP FUNCTION IF EXISTS SafeDiv;
+
 CREATE FUNCTION SafeDiv(a INT, b INT)
-RETURNS FLOAT DETERMINISTIC
+RETURNS DECIMAL(10, 6)
+DETERMINISTIC
 BEGIN
-	RETURN (IF (b = 0, 0, a / b));
-END //
+	RETURN IF (b = 0, 0, a / b);
+END $$
 
 DELIMITER ;
+
