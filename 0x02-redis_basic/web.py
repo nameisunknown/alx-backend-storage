@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """This module contains data_cacher() and get_page() functions"""
+
 import redis
 import requests
 from functools import wraps
