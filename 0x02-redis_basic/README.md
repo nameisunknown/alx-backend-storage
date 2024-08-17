@@ -1,6 +1,6 @@
 # 0x02. Redis basic
 
-Back-end Redis
+Back-endRedis
 
 -   Weight:  1
 -   Ongoing second chance project - started  Aug 14, 2024 8:00 AM, must end by  Aug 17, 2024 8:00 AM
@@ -14,7 +14,7 @@ Back-end Redis
     -   Optional: 0.0%
     -   Calculation: 0.0% + (0.0% * 0.0%) == **0.0%**
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/1/40eab4627f1bea7dfe5e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240817%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240817T032940Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=fd52cfd130b8af99f91301d82c1a823bde647987e78fd4ac92d640d9a773ad07)
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/1/40eab4627f1bea7dfe5e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240817%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240817T035237Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e020e7809b6ea53f679f7d08de6ba43f38c2a1b7024d0a58faa9265adb995d6b)
 
 ## Resources
 
@@ -288,6 +288,30 @@ Tip: use  `lrange`  and  `zip`  to loop over inputs and outputs.
 -   GitHub repository:  `alx-backend-storage`
 -   Directory:  `0x02-redis_basic`
 -   File:  `exercise.py`
+
+Done?  Check your code  Get a sandbox  QA Review
+
+### 5. Implementing an expiring web cache and tracker
+
+#advanced
+
+Score:  0.0%  (Checks completed: 0.0%)
+
+In this tasks, we will implement a  `get_page`  function (prototype:  `def get_page(url: str) -> str:`). The core of the function is very simple. It uses the  `requests`  module to obtain the HTML content of a particular URL and returns it.
+
+Start in a new file named  `web.py`  and do not reuse the code written in  `exercise.py`.
+
+Inside  `get_page`  track how many times a particular URL was accessed in the key  `"count:{url}"`  and cache the result with an expiration time of 10 seconds.
+
+Tip: Use  `http://slowwly.robertomurray.co.uk`  to simulate a slow response and test your caching.
+
+Bonus: implement this use case with decorators.
+
+**Repo:**
+
+-   GitHub repository:  `alx-backend-storage`
+-   Directory:  `0x02-redis_basic`
+-   File:  `web.py`
 
 Done?  Check your code  Get a sandbox  QA Review
 
