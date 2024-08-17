@@ -36,4 +36,3 @@ def get_page(url: str) -> str:
     "count:{url}" and cache the result with an expiration time of 10 seconds.
     """
     return requests.get(url).text
-
