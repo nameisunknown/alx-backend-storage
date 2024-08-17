@@ -91,4 +91,3 @@ class Cache:
         """Retrieves an integer value from the cache"""
 
         return self.get(key, lambda x: int(x))
-
