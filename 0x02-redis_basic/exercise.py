@@ -3,6 +3,11 @@
 This module introduces redis and contains a Cache class
 """
 
+from functools import wraps
+from typing import Any, Callable, Union
+import redis
+import uuid
+
 
 def count_calls(method: Callable) -> Callable:
     """Tracks the number of calls made to a method in a Cache class"""
